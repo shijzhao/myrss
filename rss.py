@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 import os
 
-def fetch_feed(url, atom_file, title, subtitle, item_selector, link_selector, use_headers=True):
+def fetch_feed(url, atom_file, title, subtitle, item_selector, link_selector, base_url=None, use_headers=True):
     existing_links = set()
     
     if os.path.exists(atom_file):
@@ -35,9 +35,9 @@ def fetch_feed(url, atom_file, title, subtitle, item_selector, link_selector, us
                 title_text = title_element.get_text(strip=True)
                 link = title_element['href']
                 
-                if not link.startswith('http'):
-                    link = url + link  # Adjust base URL if necessary
-
+                if base_url and not link.startswith('http'):
+                    link = base_url + link
+                    
                 if link not in existing_links:
                     entry = fg.add_entry()
                     entry.id(link)
@@ -60,6 +60,7 @@ fetch_feed(
     subtitle='Latest news',
     item_selector='div.listing-content-container',
     link_selector='a',
+    base_url='https://inews.hket.com/',  # Provide the base URL
     use_headers=True  # Use headers for HKET
 )
 
@@ -70,5 +71,6 @@ fetch_feed(
     subtitle='Latest articles',
     item_selector='span.tsubject',
     link_selector='a',
+    base_url='https://www.discuss.com.hk/',  # Provide the base URL
     use_headers=False  # No headers for HKDiscuss
 )
