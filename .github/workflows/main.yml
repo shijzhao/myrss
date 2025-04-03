@@ -35,23 +35,6 @@ jobs:
       - name: Run script to generate feed
         run: python rss.py  
         
-      - name: List generated files
-        run: ls -l  # List the files to verify they were created
-
-      - name: Check for XML files
-        run: |
-          if [ -f hket_feed.xml ]; then
-            echo "hket_feed.xml exists."
-          else
-            echo "hket_feed.xml does not exist."
-          fi
-          
-          if [ -f hkdiscuss_feed.xml ]; then
-            echo "hkdiscuss_feed.xml exists."
-          else
-            echo "hkdiscuss_feed.xml does not exist."
-          fi
-
       - name: Create a new release
         id: create_release
         uses: softprops/action-gh-release@v1
