@@ -55,7 +55,7 @@ def fetch_feed(url, atom_file, title, subtitle, item_selector, link_selector, us
 # Example usage
 fetch_feed(
     url='https://inews.hket.com/sran001/%E5%85%A8%E9%83%A8?mtc=20080',
-    atom_file='hknet.xml',
+    atom_file='hket_feed.xml',
     title='HKET News Feed',
     subtitle='Latest news',
     item_selector='div.listing-content-container',
@@ -65,7 +65,7 @@ fetch_feed(
 
 fetch_feed(
     url='https://www.discuss.com.hk/forumdisplay.php?fid=110&orderby=dateline&ascdesc=DESC&filter=0',
-    atom_file='hkdiscuss.xml',
+    atom_file='hkdiscuss_feed.xml',
     title='HKDiscuss Feed',
     subtitle='Latest articles',
     item_selector='span.tsubject',
