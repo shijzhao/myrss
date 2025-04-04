@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Use v3 (latest)
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -40,14 +40,17 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          # Checkout the gh-pages branch (create if it doesn't exist)
-          if git show-ref --quiet refs/heads/gh-pages; then
+          if git ls-remote --exit-code --heads origin gh-pages; then
+            git fetch origin gh-pages
             git checkout gh-pages
           else
             git checkout --orphan gh-pages
             git rm -rf .
+            echo "<h1>RSS Feeds</h1>" > index.html  # Required for root URL
           fi
-          # Add and commit the feed files
-          git add hket_feed.xml hkdiscuss_feed.xml
-          git commit -m "Update feed - $(date)"
+          # Copy the generated XML files
+          cp ../hkdiscuss_feed.xml ./
+          cp ../hket_feed.xml ./
+          git add .
+          git commit -m "Update feeds - $(date)"
           git push origin gh-pages --force
