@@ -1,4 +1,4 @@
-name: Generate HKET Feed
+name: Generate Feed
 
 on:
   schedule:
@@ -7,42 +7,47 @@ on:
 
 jobs:
   generate_feed:
-    permissions: write-all 
+    permissions:
+      contents: write  # Required to push to gh-pages
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Use v3 (latest)
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.8'  # Adjust if needed
-          
+          python-version: '3.8'
+
       - name: Cache Python packages
-        uses: actions/cache@v3  # Updated version
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-            
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run script to generate feed
-        run: python rss.py  
-        
-      - name: Create a new release
-        id: create_release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: v1.0.0  # Use a versioning scheme, increment as needed
-          files: |
-            hket_feed.xml
-            hkdiscuss_feed.xml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python rss.py
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          # Checkout the gh-pages branch (create if it doesn't exist)
+          if git show-ref --quiet refs/heads/gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+          # Add and commit the feed files
+          git add hket_feed.xml hkdiscuss_feed.xml
+          git commit -m "Update feed - $(date)"
+          git push origin gh-pages --force
