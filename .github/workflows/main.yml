@@ -2,13 +2,13 @@ name: Generate Feed
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
-  workflow_dispatch:  # Allows manual triggering
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   generate_feed:
     permissions:
-      contents: write  # Required to push to gh-pages
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
@@ -20,40 +20,32 @@ jobs:
         with:
           python-version: '3.8'
 
-      - name: Cache Python packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run script to generate feed
-        run: python rss.py
+      - name: Generate RSS feeds
+        run: python rss.py  # This generates hkdiscuss_feed.xml and hket_feed.xml
 
-      - name: Force Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           
+          # Checkout gh-pages branch
           if git ls-remote --exit-code --heads origin gh-pages; then
             git fetch origin gh-pages
             git checkout gh-pages --force
           else
             git checkout --orphan gh-pages
             git rm -rf .
-            echo "<h1>RSS Feeds</h1>" > index.html  # Required for root URL
+            echo "<h1>RSS Feeds</h1>" > index.html
           fi
           
-          # Copy the generated XML files
-          cp ../hkdiscuss_feed.xml ./
-          cp ../hket_feed.xml ./
-
+          # Copy the generated XML files FROM CURRENT DIRECTORY
+          cp hkdiscuss_feed.xml ./
+          cp hket_feed.xml ./
+          
           git add .
-          git commit -m "Force-update feeds - $(date +'%Y-%m-%d %H:%M:%S')" --allow-empty
+          git commit -m "Update feeds - $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin gh-pages --force
