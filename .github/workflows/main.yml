@@ -36,21 +36,24 @@ jobs:
       - name: Run script to generate feed
         run: python rss.py
 
-      - name: Deploy to GitHub Pages
+      - name: Force Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          
           if git ls-remote --exit-code --heads origin gh-pages; then
             git fetch origin gh-pages
-            git checkout gh-pages
+            git checkout gh-pages --force
           else
             git checkout --orphan gh-pages
             git rm -rf .
             echo "<h1>RSS Feeds</h1>" > index.html  # Required for root URL
           fi
+          
           # Copy the generated XML files
           cp ../hkdiscuss_feed.xml ./
           cp ../hket_feed.xml ./
+
           git add .
-          git commit -m "Update feeds - $(date)"
+          git commit -m "Force-update feeds - $(date +'%Y-%m-%d %H:%M:%S')" --allow-empty
           git push origin gh-pages --force
