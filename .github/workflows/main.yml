@@ -1,4 +1,4 @@
-name: Generate Feed
+name: Generate and Deploy RSS Feed
 
 on:
   schedule:
@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Needed for branch operations
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -25,27 +27,35 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate RSS feeds
-        run: python rss.py  # This generates hkdiscuss_feed.xml and hket_feed.xml
+        run: python rss.py
 
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          # Checkout gh-pages branch
-          if git ls-remote --exit-code --heads origin gh-pages; then
-            git fetch origin gh-pages
-            git checkout gh-pages --force
+
+          # Create or reset gh-pages branch in a separate directory
+          mkdir -p gh-pages-deploy
+          if git show-ref --quiet refs/remotes/origin/gh-pages; then
+            git worktree add gh-pages-deploy gh-pages
           else
-            git checkout --orphan gh-pages
-            git rm -rf .
-            echo "<h1>RSS Feeds</h1>" > index.html
+            git worktree add --orphan gh-pages-deploy
+            cd gh-pages-deploy
+            git commit --allow-empty -m "Initialize gh-pages"
+            git push origin gh-pages
+            cd ..
           fi
-          
-          # Copy the generated XML files FROM CURRENT DIRECTORY
-          cp hkdiscuss_feed.xml ./
-          cp hket_feed.xml ./
-          
+
+          # Move (not copy) the generated files to avoid duplication
+          mv hkdiscuss_feed.xml gh-pages-deploy/
+          mv hket_feed.xml gh-pages-deploy/
+
+          # Commit and push changes
+          cd gh-pages-deploy
           git add .
-          git commit -m "Update feeds - $(date +'%Y-%m-%d %H:%M:%S')"
-          git push origin gh-pages --force
+          if git diff-index --quiet HEAD; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update feeds $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin gh-pages
+          fi
