@@ -2,253 +2,253 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://inews.hket.com/sran001/%E5%85%A8%E9%83%A8?mtc=20080</id>
   <title>HKET News Feed</title>
-  <updated>2025-04-05T02:17:24.899836+00:00</updated>
+  <updated>2025-04-05T03:23:20.988924+00:00</updated>
   <link href="https://inews.hket.com/sran001/%E5%85%A8%E9%83%A8?mtc=20080"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>Latest news</subtitle>
   <entry>
     <id>https://inews.hket.com//article/3634392/?mtc=20005</id>
     <title>美國經濟數據｜美國3月失業率升至4.2%　超預期｜非農新職升至22.8萬</title>
-    <updated>2025-04-05T02:17:24.910719+00:00</updated>
+    <updated>2025-04-05T03:23:21.000449+00:00</updated>
     <content>美國經濟數據｜美國3月失業率升至4.2%　超預期｜非農新職升至22.8萬</content>
     <link href="https://inews.hket.com//article/3634392/?mtc=20005"/>
   </entry>
   <entry>
     <id>https://inews.hket.com//article/3931983/?mtc=20005</id>
     <title>對等關稅｜David Webb罕評：特朗普方程式錯得可笑　笑言「美國遊客或來港買iPhone和瑞士錶」</title>
-    <updated>2025-04-05T02:17:24.910666+00:00</updated>
+    <updated>2025-04-05T03:23:21.000393+00:00</updated>
     <content>對等關稅｜David Webb罕評：特朗普方程式錯得可笑　笑言「美國遊客或來港買iPhone和瑞士錶」</content>
     <link href="https://inews.hket.com//article/3931983/?mtc=20005"/>
   </entry>
   <entry>
     <id>https://inews.hket.com//article/3932007/?mtc=20005</id>
     <title>中國反制｜中國對美國進口商品反加34%關稅、回敬對等關稅　市監總局、海關和商務部同日出手反制（不斷更新）</title>
-    <updated>2025-04-05T02:17:24.910616+00:00</updated>
+    <updated>2025-04-05T03:23:21.000340+00:00</updated>
     <content>中國反制｜中國對美國進口商品反加34%關稅、回敬對等關稅　市監總局、海關和商務部同日出手反制（不斷更新）</content>
     <link href="https://inews.hket.com//article/3932007/?mtc=20005"/>
   </entry>
   <entry>
     <id>https://inews.hket.com//article/3931301/?mtc=20005</id>
     <title>港股ADR｜恒指ADR指數跌1065點　滙豐ADR低港11%　阿里巴巴京東ADR齊跌近一成（不斷更新）</title>
-    <updated>2025-04-05T02:17:24.910565+00:00</updated>
+    <updated>2025-04-05T03:23:21.000288+00:00</updated>
     <content>港股ADR｜恒指ADR指數跌1065點　滙豐ADR低港11%　阿里巴巴京東ADR齊跌近一成（不斷更新）</content>
     <link href="https://inews.hket.com//article/3931301/?mtc=20005"/>
   </entry>
   <entry>
     <id>https://inews.hket.com//article/3929438/?mtc=20005</id>
     <title>美股收市｜鮑威爾憂關稅推高通脹 道指再插2231點 納指技術見熊 中概股指數瀉8.9%</title>
-    <updated>2025-04-05T02:17:24.910513+00:00</updated>
+    <updated>2025-04-05T03:23:21.000233+00:00</updated>
     <content>美股收市｜鮑威爾憂關稅推高通脹 道指再插2231點 納指技術見熊 中概股指數瀉8.9%</content>
     <link href="https://inews.hket.com//article/3929438/?mtc=20005"/>
   </entry>
   <entry>
-    <id>https://topick.hket.com/article/3930117/%E9%A6%99%E6%B8%AF%E6%97%85%E9%81%8A%EF%B8%B1%E5%85%A7%E5%9C%B0%E5%AE%A2%E6%84%9F%E5%98%86%E9%A6%99%E6%B8%AF%E7%89%A9%E5%83%B9%E3%80%8C%E8%B2%B4%E5%87%BA%E5%A4%A9%E9%9A%9B%E3%80%8D%E3%80%80%E5%90%8C%E6%83%85%E6%B8%AF%E4%BA%BA%E7%82%BA%E6%85%B3%E9%8C%A2%E5%88%86%E6%AE%B5%E6%90%AD%E6%B8%AF%E9%90%B5?mtc=20023</id>
-    <title>香港旅遊︱內地客感嘆香港物價「貴出天際」　同情港人為慳錢分段搭港鐵</title>
-    <updated>2025-04-05T02:17:24.910458+00:00</updated>
-    <content>香港旅遊︱內地客感嘆香港物價「貴出天際」　同情港人為慳錢分段搭港鐵</content>
-    <link href="https://topick.hket.com/article/3930117/%E9%A6%99%E6%B8%AF%E6%97%85%E9%81%8A%EF%B8%B1%E5%85%A7%E5%9C%B0%E5%AE%A2%E6%84%9F%E5%98%86%E9%A6%99%E6%B8%AF%E7%89%A9%E5%83%B9%E3%80%8C%E8%B2%B4%E5%87%BA%E5%A4%A9%E9%9A%9B%E3%80%8D%E3%80%80%E5%90%8C%E6%83%85%E6%B8%AF%E4%BA%BA%E7%82%BA%E6%85%B3%E9%8C%A2%E5%88%86%E6%AE%B5%E6%90%AD%E6%B8%AF%E9%90%B5?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://invest.hket.com/article/3834469/%E6%94%BF%E7%AD%96%E5%B8%82%EF%BD%9C%E4%B8%AD%E5%9C%8B%E5%8A%A0%E7%BE%8E%E5%9C%8B%E8%B2%A834-%E9%97%9C%E7%A8%85%20%E7%89%B9%E6%9C%97%E6%99%AE%E5%BB%B6%E9%95%B7%E5%87%BA%E5%94%AETikTok%E6%9C%9F%E9%99%90%EF%BC%88%E6%8C%81%E7%BA%8C%E6%9B%B4%E6%96%B0%EF%BC%89?mtc=20023</id>
-    <title>政策市｜中國加美國貨34%關稅 特朗普延長出售TikTok期限（持續更新）</title>
-    <updated>2025-04-05T02:17:24.910404+00:00</updated>
-    <content>政策市｜中國加美國貨34%關稅 特朗普延長出售TikTok期限（持續更新）</content>
-    <link href="https://invest.hket.com/article/3834469/%E6%94%BF%E7%AD%96%E5%B8%82%EF%BD%9C%E4%B8%AD%E5%9C%8B%E5%8A%A0%E7%BE%8E%E5%9C%8B%E8%B2%A834-%E9%97%9C%E7%A8%85%20%E7%89%B9%E6%9C%97%E6%99%AE%E5%BB%B6%E9%95%B7%E5%87%BA%E5%94%AETikTok%E6%9C%9F%E9%99%90%EF%BC%88%E6%8C%81%E7%BA%8C%E6%9B%B4%E6%96%B0%EF%BC%89?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3930378/%E5%93%88%E5%88%A9%E8%AE%8A%E3%80%8C%E4%B9%B8%E8%84%B7%E3%80%8D%20%20%E5%8A%A0%E9%97%9C%E7%A8%85%E5%BE%8C%E8%BB%8A%E5%83%B9%E7%98%8B%E7%8B%82%E9%A3%88%E5%8D%87%C2%A0?mtc=20023</id>
-    <title>哈利變「乸脷」  加關稅後車價瘋狂飈升</title>
-    <updated>2025-04-05T02:17:24.910351+00:00</updated>
-    <content>哈利變「乸脷」  加關稅後車價瘋狂飈升</content>
-    <link href="https://specialist.hket.com/article/3930378/%E5%93%88%E5%88%A9%E8%AE%8A%E3%80%8C%E4%B9%B8%E8%84%B7%E3%80%8D%20%20%E5%8A%A0%E9%97%9C%E7%A8%85%E5%BE%8C%E8%BB%8A%E5%83%B9%E7%98%8B%E7%8B%82%E9%A3%88%E5%8D%87%C2%A0?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3930348/%E8%B7%9F%E3%80%8C%E5%9C%8B%E6%9C%83%E5%A5%B3%E8%82%A1%E7%A5%9E%E3%80%8D%E5%AD%B8%E6%8A%95%E8%B3%87%20%C2%A0%E4%BD%A9%E6%B4%9B%E8%A5%BF%E5%9C%A8%E8%B2%B7%E7%94%9A%E9%BA%BC%E8%82%A1%EF%BC%9F%EF%BC%88%E9%99%848%E9%9A%BB%E8%82%A1%E4%BB%BD%E9%81%8E%E5%8E%BB1%E5%B9%B4%E8%A1%A8%E7%8F%BE%EF%BC%89?mtc=20023</id>
-    <title>跟「國會女股神」學投資  佩洛西在買甚麼股？（附8隻股份過去1年表現）</title>
-    <updated>2025-04-05T02:17:24.910295+00:00</updated>
-    <content>跟「國會女股神」學投資  佩洛西在買甚麼股？（附8隻股份過去1年表現）</content>
-    <link href="https://specialist.hket.com/article/3930348/%E8%B7%9F%E3%80%8C%E5%9C%8B%E6%9C%83%E5%A5%B3%E8%82%A1%E7%A5%9E%E3%80%8D%E5%AD%B8%E6%8A%95%E8%B3%87%20%C2%A0%E4%BD%A9%E6%B4%9B%E8%A5%BF%E5%9C%A8%E8%B2%B7%E7%94%9A%E9%BA%BC%E8%82%A1%EF%BC%9F%EF%BC%88%E9%99%848%E9%9A%BB%E8%82%A1%E4%BB%BD%E9%81%8E%E5%8E%BB1%E5%B9%B4%E8%A1%A8%E7%8F%BE%EF%BC%89?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3931020/%E8%93%8B%E8%8C%A8%E5%9F%BA%E9%87%91%E6%9C%83%E4%BF%A1%E8%A8%97%E7%94%A8%E9%80%BE6%E6%88%90%E8%B3%87%E7%94%A2%E6%8F%B8%E9%87%8D3%E9%9A%BB%E8%82%A1%E7%A5%A8?mtc=20023</id>
-    <title>蓋茨基金會信託用逾6成資產揸重3隻股票</title>
-    <updated>2025-04-05T02:17:24.910243+00:00</updated>
-    <content>蓋茨基金會信託用逾6成資產揸重3隻股票</content>
-    <link href="https://specialist.hket.com/article/3931020/%E8%93%8B%E8%8C%A8%E5%9F%BA%E9%87%91%E6%9C%83%E4%BF%A1%E8%A8%97%E7%94%A8%E9%80%BE6%E6%88%90%E8%B3%87%E7%94%A2%E6%8F%B8%E9%87%8D3%E9%9A%BB%E8%82%A1%E7%A5%A8?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3931129/%E8%8B%B1%E5%81%89%E9%81%94AI%E6%84%9B%E8%82%A1%E6%BC%94%E8%AE%8A%E5%A4%A7%E6%8A%AB%E9%9C%B2%EF%BC%88%E9%99%84%E6%8C%81%E8%82%A1%E5%90%8D%E5%96%AE%EF%BC%89?mtc=20023</id>
-    <title>英偉達AI愛股演變大披露（附持股名單）</title>
-    <updated>2025-04-05T02:17:24.910191+00:00</updated>
-    <content>英偉達AI愛股演變大披露（附持股名單）</content>
-    <link href="https://specialist.hket.com/article/3931129/%E8%8B%B1%E5%81%89%E9%81%94AI%E6%84%9B%E8%82%A1%E6%BC%94%E8%AE%8A%E5%A4%A7%E6%8A%AB%E9%9C%B2%EF%BC%88%E9%99%84%E6%8C%81%E8%82%A1%E5%90%8D%E5%96%AE%EF%BC%89?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3931249/AI%E6%B5%AA%E6%BD%AE%E4%B8%8D%E9%80%B2%E5%89%87%E9%80%80%20%C2%A0%E3%80%8A%E5%B7%B4%E9%9A%86%E6%B0%8F%E3%80%8B%E6%89%B9Google%E6%AD%A5%E6%9F%AF%E9%81%94%E5%BE%8C%E5%A1%B5?mtc=20023</id>
-    <title>AI浪潮不進則退  《巴隆氏》批Google步柯達後塵</title>
-    <updated>2025-04-05T02:17:24.910136+00:00</updated>
-    <content>AI浪潮不進則退  《巴隆氏》批Google步柯達後塵</content>
-    <link href="https://specialist.hket.com/article/3931249/AI%E6%B5%AA%E6%BD%AE%E4%B8%8D%E9%80%B2%E5%89%87%E9%80%80%20%C2%A0%E3%80%8A%E5%B7%B4%E9%9A%86%E6%B0%8F%E3%80%8B%E6%89%B9Google%E6%AD%A5%E6%9F%AF%E9%81%94%E5%BE%8C%E5%A1%B5?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3931457/%E9%97%9C%E7%A8%85%E7%B4%AF%E5%8A%A0%20%E4%BC%81%E6%A5%AD%E6%8B%92%E3%80%8C%E5%89%B2%E8%82%89%E9%A3%BC%E8%99%8E%E3%80%8D?mtc=20023</id>
-    <title>關稅累加 企業拒「割肉飼虎」</title>
-    <updated>2025-04-05T02:17:24.910086+00:00</updated>
-    <content>關稅累加 企業拒「割肉飼虎」</content>
-    <link href="https://specialist.hket.com/article/3931457/%E9%97%9C%E7%A8%85%E7%B4%AF%E5%8A%A0%20%E4%BC%81%E6%A5%AD%E6%8B%92%E3%80%8C%E5%89%B2%E8%82%89%E9%A3%BC%E8%99%8E%E3%80%8D?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3931762/%E6%B3%A2%E7%BE%85%E7%9A%84%E6%B5%B7%E6%8C%87%E6%95%B8%EF%BD%9C%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E5%88%9D%E6%9C%9F%20%20%E6%A5%AD%E7%95%8C%E6%B2%99%E7%9B%A4%E6%8E%A8%E6%BC%942%E6%A5%B5%E7%AB%AF%E6%83%85%E5%A2%83%20%20%20BDI%E5%85%AB%E9%80%A3%E8%B7%8C%20%E8%80%83%E9%A9%971500?mtc=20023</id>
-    <title>波羅的海指數｜對等關稅初期  業界沙盤推演2極端情境   BDI八連跌 考驗1500</title>
-    <updated>2025-04-05T02:17:24.910034+00:00</updated>
-    <content>波羅的海指數｜對等關稅初期  業界沙盤推演2極端情境   BDI八連跌 考驗1500</content>
-    <link href="https://specialist.hket.com/article/3931762/%E6%B3%A2%E7%BE%85%E7%9A%84%E6%B5%B7%E6%8C%87%E6%95%B8%EF%BD%9C%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E5%88%9D%E6%9C%9F%20%20%E6%A5%AD%E7%95%8C%E6%B2%99%E7%9B%A4%E6%8E%A8%E6%BC%942%E6%A5%B5%E7%AB%AF%E6%83%85%E5%A2%83%20%20%20BDI%E5%85%AB%E9%80%A3%E8%B7%8C%20%E8%80%83%E9%A9%971500?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://specialist.hket.com/article/3931520/%E7%84%A1%E8%99%95%E4%B8%8D%E9%97%9C%E7%A8%85%20%20%E8%98%8B%E6%9E%9C%E8%BA%AB%E5%8F%97%E9%87%8D%E5%82%B7%20%EF%BC%88%E8%A9%B3%E5%88%97%E5%90%84%E5%9C%B0%E7%94%A2%E7%B6%AB%E5%88%86%E5%B8%83%EF%BC%89?mtc=20023</id>
-    <title>無處不關稅  蘋果身受重傷 （詳列各地產綫分布）</title>
-    <updated>2025-04-05T02:17:24.909983+00:00</updated>
-    <content>無處不關稅  蘋果身受重傷 （詳列各地產綫分布）</content>
-    <link href="https://specialist.hket.com/article/3931520/%E7%84%A1%E8%99%95%E4%B8%8D%E9%97%9C%E7%A8%85%20%20%E8%98%8B%E6%9E%9C%E8%BA%AB%E5%8F%97%E9%87%8D%E5%82%B7%20%EF%BC%88%E8%A9%B3%E5%88%97%E5%90%84%E5%9C%B0%E7%94%A2%E7%B6%AB%E5%88%86%E5%B8%83%EF%BC%89?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://invest.hket.com/article/3932179/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E6%81%92%E7%94%9F%E4%B8%AD%E5%9C%8B%E4%BC%81%E6%A5%AD%E6%8C%87%E6%95%B8?mtc=20023</id>
-    <title>夜期成交資料——恒生中國企業指數</title>
-    <updated>2025-04-05T02:17:24.909932+00:00</updated>
-    <content>夜期成交資料——恒生中國企業指數</content>
-    <link href="https://invest.hket.com/article/3932179/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E6%81%92%E7%94%9F%E4%B8%AD%E5%9C%8B%E4%BC%81%E6%A5%AD%E6%8C%87%E6%95%B8?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://invest.hket.com/article/3932180/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E6%81%92%E6%8C%87?mtc=20023</id>
-    <title>夜期成交資料——恒指</title>
-    <updated>2025-04-05T02:17:24.909879+00:00</updated>
-    <content>夜期成交資料——恒指</content>
-    <link href="https://invest.hket.com/article/3932180/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E6%81%92%E6%8C%87?mtc=20023"/>
-  </entry>
-  <entry>
-    <id>https://invest.hket.com/article/3932181/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80%E6%8C%87%E6%95%B8?mtc=20023</id>
-    <title>夜期成交資料——恒生科技指數</title>
-    <updated>2025-04-05T02:17:24.909819+00:00</updated>
-    <content>夜期成交資料——恒生科技指數</content>
-    <link href="https://invest.hket.com/article/3932181/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E6%81%92%E7%94%9F%E7%A7%91%E6%8A%80%E6%8C%87%E6%95%B8?mtc=20023"/>
-  </entry>
-  <entry>
     <id>https://invest.hket.com/article/3932182/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E5%B0%8F%E5%9E%8B%E6%81%92%E7%94%9F%E4%B8%AD%E5%9C%8B%E4%BC%81%E6%A5%AD%E6%8C%87%E6%95%B8?mtc=20023</id>
     <title>夜期成交資料——小型恒生中國企業指數</title>
-    <updated>2025-04-05T02:17:24.909747+00:00</updated>
+    <updated>2025-04-05T03:23:21.000177+00:00</updated>
     <content>夜期成交資料——小型恒生中國企業指數</content>
     <link href="https://invest.hket.com/article/3932182/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E5%B0%8F%E5%9E%8B%E6%81%92%E7%94%9F%E4%B8%AD%E5%9C%8B%E4%BC%81%E6%A5%AD%E6%8C%87%E6%95%B8?mtc=20023"/>
   </entry>
   <entry>
     <id>https://invest.hket.com/article/3932183/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E5%B0%8F%E5%9E%8B%E6%81%92%E6%8C%87?mtc=20023</id>
     <title>夜期成交資料——小型恒指</title>
-    <updated>2025-04-05T02:17:24.909697+00:00</updated>
+    <updated>2025-04-05T03:23:21.000119+00:00</updated>
     <content>夜期成交資料——小型恒指</content>
     <link href="https://invest.hket.com/article/3932183/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E5%B0%8F%E5%9E%8B%E6%81%92%E6%8C%87?mtc=20023"/>
   </entry>
   <entry>
     <id>https://invest.hket.com/article/3932184/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E7%BE%8E%E5%85%83%E5%85%8C%E4%BA%BA%E6%B0%91%E5%B9%A3%EF%BC%88%E9%A6%99%E6%B8%AF%EF%BC%89%E6%9C%9F%E8%B2%A8?mtc=20023</id>
     <title>夜期成交資料——美元兌人民幣（香港）期貨</title>
-    <updated>2025-04-05T02:17:24.909646+00:00</updated>
+    <updated>2025-04-05T03:23:21.000044+00:00</updated>
     <content>夜期成交資料——美元兌人民幣（香港）期貨</content>
     <link href="https://invest.hket.com/article/3932184/%E5%A4%9C%E6%9C%9F%E6%88%90%E4%BA%A4%E8%B3%87%E6%96%99%E2%80%94%E2%80%94%E7%BE%8E%E5%85%83%E5%85%8C%E4%BA%BA%E6%B0%91%E5%B9%A3%EF%BC%88%E9%A6%99%E6%B8%AF%EF%BC%89%E6%9C%9F%E8%B2%A8?mtc=20023"/>
   </entry>
   <entry>
     <id>https://invest.hket.com/article/3932185/%E6%B8%AF%E8%82%A1ADR%E9%80%9F%E9%81%9E?mtc=20023</id>
     <title>港股ADR速遞</title>
-    <updated>2025-04-05T02:17:24.909594+00:00</updated>
+    <updated>2025-04-05T03:23:20.999990+00:00</updated>
     <content>港股ADR速遞</content>
     <link href="https://invest.hket.com/article/3932185/%E6%B8%AF%E8%82%A1ADR%E9%80%9F%E9%81%9E?mtc=20023"/>
   </entry>
   <entry>
     <id>https://inews.hket.com//article/3929438/%E7%BE%8E%E8%82%A1%E6%94%B6%E5%B8%82%EF%BD%9C%E9%AE%91%E5%A8%81%E7%88%BE%E6%86%82%E9%97%9C%E7%A8%85%E6%8E%A8%E9%AB%98%E9%80%9A%E8%84%B9%20%E9%81%93%E6%8C%87%E5%86%8D%E6%8F%922231%E9%BB%9E%20%E7%B4%8D%E6%8C%87%E6%8A%80%E8%A1%93%E8%A6%8B%E7%86%8A%20%E4%B8%AD%E6%A6%82%E8%82%A1%E6%8C%87%E6%95%B8%E7%80%898.9-?mtc=20023</id>
     <title>美股收市｜鮑威爾憂關稅推高通脹 道指再插2231點 納指技術見熊 中概股指數瀉8.9%</title>
-    <updated>2025-04-05T02:17:24.909538+00:00</updated>
+    <updated>2025-04-05T03:23:20.999940+00:00</updated>
     <content>美股收市｜鮑威爾憂關稅推高通脹 道指再插2231點 納指技術見熊 中概股指數瀉8.9%</content>
     <link href="https://inews.hket.com//article/3929438/%E7%BE%8E%E8%82%A1%E6%94%B6%E5%B8%82%EF%BD%9C%E9%AE%91%E5%A8%81%E7%88%BE%E6%86%82%E9%97%9C%E7%A8%85%E6%8E%A8%E9%AB%98%E9%80%9A%E8%84%B9%20%E9%81%93%E6%8C%87%E5%86%8D%E6%8F%922231%E9%BB%9E%20%E7%B4%8D%E6%8C%87%E6%8A%80%E8%A1%93%E8%A6%8B%E7%86%8A%20%E4%B8%AD%E6%A6%82%E8%82%A1%E6%8C%87%E6%95%B8%E7%80%898.9-?mtc=20023"/>
   </entry>
   <entry>
     <id>https://inews.hket.com//article/3931301/%E6%B8%AF%E8%82%A1ADR%EF%BD%9C%E6%81%92%E6%8C%87ADR%E6%8C%87%E6%95%B8%E7%80%891220%E9%BB%9E%E3%80%80%E6%BB%99%E8%B1%90ADR%E4%BD%8E%E6%B8%AF10-%E3%80%80%E9%98%BF%E9%87%8C%E7%BE%8E%E8%82%A1%E4%BD%8E%E6%B8%AF8-%EF%BC%88%E4%B8%8D%E6%96%B7%E6%9B%B4%E6%96%B0%EF%BC%89?mtc=20023</id>
     <title>港股ADR｜恒指ADR指數瀉1220點　滙豐ADR低港10%　阿里美股低港8%（不斷更新）</title>
-    <updated>2025-04-05T02:17:24.909485+00:00</updated>
+    <updated>2025-04-05T03:23:20.999888+00:00</updated>
     <content>港股ADR｜恒指ADR指數瀉1220點　滙豐ADR低港10%　阿里美股低港8%（不斷更新）</content>
     <link href="https://inews.hket.com//article/3931301/%E6%B8%AF%E8%82%A1ADR%EF%BD%9C%E6%81%92%E6%8C%87ADR%E6%8C%87%E6%95%B8%E7%80%891220%E9%BB%9E%E3%80%80%E6%BB%99%E8%B1%90ADR%E4%BD%8E%E6%B8%AF10-%E3%80%80%E9%98%BF%E9%87%8C%E7%BE%8E%E8%82%A1%E4%BD%8E%E6%B8%AF8-%EF%BC%88%E4%B8%8D%E6%96%B7%E6%9B%B4%E6%96%B0%EF%BC%89?mtc=20023"/>
   </entry>
   <entry>
     <id>https://inews.hket.com//article/3931543/%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%EF%BD%9C3%E5%80%8B%E6%9C%88%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%E6%9C%80%E9%AB%98%E6%81%AF5.58%E5%8E%98%20%E5%A4%A7%E8%B7%8C%E5%B8%82%E8%BC%95%E9%AC%86%E8%B3%BA%E6%81%AF%E9%80%BE4%E8%90%AC%E5%85%83?mtc=20023</id>
     <title>港元定存｜3個月港元定存最高息5.58厘 大跌市輕鬆賺息逾4萬元</title>
-    <updated>2025-04-05T02:17:24.909428+00:00</updated>
+    <updated>2025-04-05T03:23:20.999835+00:00</updated>
     <content>港元定存｜3個月港元定存最高息5.58厘 大跌市輕鬆賺息逾4萬元</content>
     <link href="https://inews.hket.com//article/3931543/%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%EF%BD%9C3%E5%80%8B%E6%9C%88%E6%B8%AF%E5%85%83%E5%AE%9A%E5%AD%98%E6%9C%80%E9%AB%98%E6%81%AF5.58%E5%8E%98%20%E5%A4%A7%E8%B7%8C%E5%B8%82%E8%BC%95%E9%AC%86%E8%B3%BA%E6%81%AF%E9%80%BE4%E8%90%AC%E5%85%83?mtc=20023"/>
   </entry>
   <entry>
     <id>https://topick.hket.com/article/2591706/%E6%80%A5%E7%97%87%E5%AE%A4%E6%9C%80%E9%95%B7%E7%AD%89%E5%80%99%E6%99%82%E9%96%93%EF%BC%8804%E6%9C%8805%E6%97%A5%20%E6%99%82%E9%96%9308:05%EF%BC%89?mtc=20023</id>
     <title>急症室最長等候時間（04月05日 時間08:05）</title>
-    <updated>2025-04-05T02:17:24.909372+00:00</updated>
+    <updated>2025-04-05T03:23:20.999778+00:00</updated>
     <content>急症室最長等候時間（04月05日 時間08:05）</content>
     <link href="https://topick.hket.com/article/2591706/%E6%80%A5%E7%97%87%E5%AE%A4%E6%9C%80%E9%95%B7%E7%AD%89%E5%80%99%E6%99%82%E9%96%93%EF%BC%8804%E6%9C%8805%E6%97%A5%20%E6%99%82%E9%96%9308:05%EF%BC%89?mtc=20023"/>
   </entry>
   <entry>
     <id>https://topick.hket.com/article/3927034/%E5%A4%96%E8%B3%A3%E6%82%B2%E5%8A%87%EF%BD%9C%E5%A4%96%E8%B3%A3%E5%92%96%E5%95%A1%E5%80%92%E7%80%89%E5%8D%8A%E6%9D%AF%E5%8C%99%E9%A4%90%E5%85%B7%E8%AE%8A%E5%BD%8E%E3%80%80%E6%B8%AF%E7%94%B7%E5%B4%A9%E6%BD%B0%E5%A4%A7%E5%91%BB%EF%BC%9A%E9%A3%9F%E5%80%8B%E9%A3%AF%E9%83%BD%E5%94%94%E5%AE%89%E6%A8%82?mtc=20023</id>
     <title>外賣悲劇｜外賣咖啡倒瀉半杯匙餐具變彎　港男崩潰大呻：食個飯都唔安樂</title>
-    <updated>2025-04-05T02:17:24.909320+00:00</updated>
+    <updated>2025-04-05T03:23:20.999716+00:00</updated>
     <content>外賣悲劇｜外賣咖啡倒瀉半杯匙餐具變彎　港男崩潰大呻：食個飯都唔安樂</content>
     <link href="https://topick.hket.com/article/3927034/%E5%A4%96%E8%B3%A3%E6%82%B2%E5%8A%87%EF%BD%9C%E5%A4%96%E8%B3%A3%E5%92%96%E5%95%A1%E5%80%92%E7%80%89%E5%8D%8A%E6%9D%AF%E5%8C%99%E9%A4%90%E5%85%B7%E8%AE%8A%E5%BD%8E%E3%80%80%E6%B8%AF%E7%94%B7%E5%B4%A9%E6%BD%B0%E5%A4%A7%E5%91%BB%EF%BC%9A%E9%A3%9F%E5%80%8B%E9%A3%AF%E9%83%BD%E5%94%94%E5%AE%89%E6%A8%82?mtc=20023"/>
   </entry>
   <entry>
     <id>https://ps.hket.com/article/3922045/%E9%97%9C%E4%BD%A0%E5%AE%B6%E4%BA%8B%EF%BD%9C%E7%94%A8%E6%BF%95%E5%BB%81%E7%B4%99%E6%98%93%E5%A1%9E%E5%BB%81%E6%89%80%EF%BC%9F11%E6%AC%BE%E7%8D%B2%E6%B6%88%E5%A7%94%E6%9C%83%E8%A9%955%E6%98%9F%20%20%E5%8F%A6%E9%99%845%E5%A4%A7%E4%BD%BF%E7%94%A8%E8%B2%BC%E5%A3%AB?mtc=20023</id>
     <title>關你家事｜用濕廁紙易塞廁所？11款獲消委會評5星  另附5大使用貼士</title>
-    <updated>2025-04-05T02:17:24.909265+00:00</updated>
+    <updated>2025-04-05T03:23:20.999664+00:00</updated>
     <content>關你家事｜用濕廁紙易塞廁所？11款獲消委會評5星  另附5大使用貼士</content>
     <link href="https://ps.hket.com/article/3922045/%E9%97%9C%E4%BD%A0%E5%AE%B6%E4%BA%8B%EF%BD%9C%E7%94%A8%E6%BF%95%E5%BB%81%E7%B4%99%E6%98%93%E5%A1%9E%E5%BB%81%E6%89%80%EF%BC%9F11%E6%AC%BE%E7%8D%B2%E6%B6%88%E5%A7%94%E6%9C%83%E8%A9%955%E6%98%9F%20%20%E5%8F%A6%E9%99%845%E5%A4%A7%E4%BD%BF%E7%94%A8%E8%B2%BC%E5%A3%AB?mtc=20023"/>
   </entry>
   <entry>
     <id>https://ps.hket.com/article/2932616/%E6%BD%AE%E6%BF%95%E5%A4%A9%E6%B0%A3%EF%BD%9C%E7%9B%92%E8%A3%9D%E5%90%B8%E6%BF%95%E7%94%A2%E5%93%81%E9%BB%9E%E6%8F%80%E5%A5%BD%EF%BC%9F%20%E4%B8%80%E6%96%87%E6%9F%A5%E7%9C%8B%E6%B6%88%E5%A7%94%E6%9C%83%E5%90%B8%E6%BF%95%E7%94%A2%E5%93%81%E8%A9%95%E5%88%86%E8%A1%A8-7%E5%A4%A7%E5%BB%BA%E8%AD%B0?mtc=20023</id>
     <title>潮濕天氣｜盒裝吸濕產品點揀好？ 一文查看消委會吸濕產品評分表+7大建議</title>
-    <updated>2025-04-05T02:17:24.909202+00:00</updated>
+    <updated>2025-04-05T03:23:20.999611+00:00</updated>
     <content>潮濕天氣｜盒裝吸濕產品點揀好？ 一文查看消委會吸濕產品評分表+7大建議</content>
     <link href="https://ps.hket.com/article/2932616/%E6%BD%AE%E6%BF%95%E5%A4%A9%E6%B0%A3%EF%BD%9C%E7%9B%92%E8%A3%9D%E5%90%B8%E6%BF%95%E7%94%A2%E5%93%81%E9%BB%9E%E6%8F%80%E5%A5%BD%EF%BC%9F%20%E4%B8%80%E6%96%87%E6%9F%A5%E7%9C%8B%E6%B6%88%E5%A7%94%E6%9C%83%E5%90%B8%E6%BF%95%E7%94%A2%E5%93%81%E8%A9%95%E5%88%86%E8%A1%A8-7%E5%A4%A7%E5%BB%BA%E8%AD%B0?mtc=20023"/>
   </entry>
   <entry>
     <id>https://topick.hket.com/article/3932131/%E5%85%AC%E5%8B%99%E5%93%A1%EF%BD%9C%E5%85%AC%E5%83%95%E9%9D%9E%E5%AF%A6%E5%A0%B1%E5%AF%A6%E9%8A%B7%E7%8F%BE%E9%87%91%E6%B4%A5%E8%B2%BC%E9%96%8B%E6%94%AF%E5%B9%B4%E5%B9%B4%E5%8D%87%E3%80%80%E4%BB%8A%E5%B9%B4%E5%BA%A6%E6%96%991.8%E8%90%AC%E4%BA%BA%E5%8F%97%E6%83%A0%E6%B6%8940%E5%84%84?mtc=20023</id>
     <title>公務員｜公僕非實報實銷現金津貼開支年年升　今年度料1.8萬人受惠涉40億</title>
-    <updated>2025-04-05T02:17:24.909144+00:00</updated>
+    <updated>2025-04-05T03:23:20.999554+00:00</updated>
     <content>公務員｜公僕非實報實銷現金津貼開支年年升　今年度料1.8萬人受惠涉40億</content>
     <link href="https://topick.hket.com/article/3932131/%E5%85%AC%E5%8B%99%E5%93%A1%EF%BD%9C%E5%85%AC%E5%83%95%E9%9D%9E%E5%AF%A6%E5%A0%B1%E5%AF%A6%E9%8A%B7%E7%8F%BE%E9%87%91%E6%B4%A5%E8%B2%BC%E9%96%8B%E6%94%AF%E5%B9%B4%E5%B9%B4%E5%8D%87%E3%80%80%E4%BB%8A%E5%B9%B4%E5%BA%A6%E6%96%991.8%E8%90%AC%E4%BA%BA%E5%8F%97%E6%83%A0%E6%B6%8940%E5%84%84?mtc=20023"/>
   </entry>
   <entry>
     <id>https://ps.hket.com/article/3930376/%E7%B5%90%E6%A5%AD%E6%BD%AE%EF%BD%9C24%E5%B0%8F%E6%99%82%E9%80%A3%E9%8E%96%E5%81%A5%E8%BA%AB%E5%AE%A4%E7%AA%81%E5%AE%A3%E5%B8%83%E5%88%86%E5%BA%97%E5%9F%B7%E7%AC%A0%20%20%E7%9B%A7%E5%B7%A7%E9%9F%B3%E9%83%BD%E4%BF%82%E7%B2%89%E7%B5%B2?mtc=20023</id>
     <title>結業潮｜24小時連鎖健身室突宣布分店執笠  盧巧音都係粉絲</title>
-    <updated>2025-04-05T02:17:24.909092+00:00</updated>
+    <updated>2025-04-05T03:23:20.999498+00:00</updated>
     <content>結業潮｜24小時連鎖健身室突宣布分店執笠  盧巧音都係粉絲</content>
     <link href="https://ps.hket.com/article/3930376/%E7%B5%90%E6%A5%AD%E6%BD%AE%EF%BD%9C24%E5%B0%8F%E6%99%82%E9%80%A3%E9%8E%96%E5%81%A5%E8%BA%AB%E5%AE%A4%E7%AA%81%E5%AE%A3%E5%B8%83%E5%88%86%E5%BA%97%E5%9F%B7%E7%AC%A0%20%20%E7%9B%A7%E5%B7%A7%E9%9F%B3%E9%83%BD%E4%BF%82%E7%B2%89%E7%B5%B2?mtc=20023"/>
   </entry>
   <entry>
     <id>https://ps.hket.com/article/3932055/4%E6%9C%88%E6%96%B0%E7%9B%A4%E6%BD%AE%EF%BD%9C6%E5%80%8B%E5%85%A8%E6%96%B0%E7%9B%A4%E9%80%BE2,700%E4%BC%99%E9%9A%A8%E6%99%82%E5%87%BA%E6%93%8A%20%E8%A5%BF%E6%B2%99SIERRA%20SEA%E6%88%90%E7%84%A6%E9%BB%9E%E6%96%B0%E7%9B%A4?mtc=20023</id>
     <title>4月新盤潮｜6個全新盤逾2,700伙隨時出擊 西沙SIERRA SEA成焦點新盤</title>
-    <updated>2025-04-05T02:17:24.909039+00:00</updated>
+    <updated>2025-04-05T03:23:20.999443+00:00</updated>
     <content>4月新盤潮｜6個全新盤逾2,700伙隨時出擊 西沙SIERRA SEA成焦點新盤</content>
     <link href="https://ps.hket.com/article/3932055/4%E6%9C%88%E6%96%B0%E7%9B%A4%E6%BD%AE%EF%BD%9C6%E5%80%8B%E5%85%A8%E6%96%B0%E7%9B%A4%E9%80%BE2,700%E4%BC%99%E9%9A%A8%E6%99%82%E5%87%BA%E6%93%8A%20%E8%A5%BF%E6%B2%99SIERRA%20SEA%E6%88%90%E7%84%A6%E9%BB%9E%E6%96%B0%E7%9B%A4?mtc=20023"/>
   </entry>
   <entry>
     <id>https://wealth.hket.com/article/3931936/%E6%97%85%E9%81%8A%E4%BF%9D%E9%9A%AA%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E8%87%AA%E7%84%B6%E7%81%BD%E5%AE%B3%EF%BC%9F5%E6%AC%BE%E8%A8%88%E5%8A%83%E8%B3%A0%E5%84%9F%E7%AF%84%E5%9C%8D%E3%80%81%E6%A2%9D%E6%AC%BE%E3%80%81%E4%BF%9D%E9%A1%8D%E6%AF%94%E8%BC%83?mtc=20023</id>
     <title>旅遊保險如何保障自然災害？5款計劃賠償範圍、條款、保額比較</title>
-    <updated>2025-04-05T02:17:24.908981+00:00</updated>
+    <updated>2025-04-05T03:23:20.999391+00:00</updated>
     <content>旅遊保險如何保障自然災害？5款計劃賠償範圍、條款、保額比較</content>
     <link href="https://wealth.hket.com/article/3931936/%E6%97%85%E9%81%8A%E4%BF%9D%E9%9A%AA%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E8%87%AA%E7%84%B6%E7%81%BD%E5%AE%B3%EF%BC%9F5%E6%AC%BE%E8%A8%88%E5%8A%83%E8%B3%A0%E5%84%9F%E7%AF%84%E5%9C%8D%E3%80%81%E6%A2%9D%E6%AC%BE%E3%80%81%E4%BF%9D%E9%A1%8D%E6%AF%94%E8%BC%83?mtc=20023"/>
   </entry>
   <entry>
     <id>https://topick.hket.com/article/3932039/Chiikawa%EF%BD%9C%E5%90%89%E4%BC%8A%E5%8D%A1%E5%93%87%E7%88%86%E7%B4%85%E5%B8%B6%E5%8B%95%E4%B8%8A%E5%84%84%E5%85%83%E7%B6%93%E6%BF%9F%E6%95%88%E7%9B%8A%E3%80%804%E5%A4%A7%E9%AD%94%E6%B3%95%E7%B7%B4%E6%88%90?mtc=20023</id>
     <title>Chiikawa｜吉伊卡哇爆紅帶動上億元經濟效益　4大魔法練成</title>
-    <updated>2025-04-05T02:17:24.908922+00:00</updated>
+    <updated>2025-04-05T03:23:20.999339+00:00</updated>
     <content>Chiikawa｜吉伊卡哇爆紅帶動上億元經濟效益　4大魔法練成</content>
     <link href="https://topick.hket.com/article/3932039/Chiikawa%EF%BD%9C%E5%90%89%E4%BC%8A%E5%8D%A1%E5%93%87%E7%88%86%E7%B4%85%E5%B8%B6%E5%8B%95%E4%B8%8A%E5%84%84%E5%85%83%E7%B6%93%E6%BF%9F%E6%95%88%E7%9B%8A%E3%80%804%E5%A4%A7%E9%AD%94%E6%B3%95%E7%B7%B4%E6%88%90?mtc=20023"/>
   </entry>
   <entry>
     <id>https://ps.hket.com/article/3932001/%E6%96%B0%E5%BA%97%E9%96%8B%E5%BC%B5%EF%BD%9C%E7%B5%90%E6%A5%AD%E6%BD%AE%E4%B8%8B%E5%A5%87%E8%91%A9%20Beans%20Bakery%E5%B0%87%E8%BB%8D%E6%BE%B3%E9%96%8B%E7%AC%AC8%E9%96%93%E5%BA%97%20%E5%90%8C%E5%8D%80%E5%85%B18%E9%96%93%E5%90%8C%E7%B3%BB%E5%BA%97%E8%88%96?mtc=20023</id>
     <title>新店開張｜結業潮下奇葩 Beans Bakery將軍澳開第8間店 同區共8間同系店舖</title>
-    <updated>2025-04-05T02:17:24.908841+00:00</updated>
+    <updated>2025-04-05T03:23:20.999286+00:00</updated>
     <content>新店開張｜結業潮下奇葩 Beans Bakery將軍澳開第8間店 同區共8間同系店舖</content>
     <link href="https://ps.hket.com/article/3932001/%E6%96%B0%E5%BA%97%E9%96%8B%E5%BC%B5%EF%BD%9C%E7%B5%90%E6%A5%AD%E6%BD%AE%E4%B8%8B%E5%A5%87%E8%91%A9%20Beans%20Bakery%E5%B0%87%E8%BB%8D%E6%BE%B3%E9%96%8B%E7%AC%AC8%E9%96%93%E5%BA%97%20%E5%90%8C%E5%8D%80%E5%85%B18%E9%96%93%E5%90%8C%E7%B3%BB%E5%BA%97%E8%88%96?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://specialist.hket.com/article/3931762/%E6%B3%A2%E7%BE%85%E7%9A%84%E6%B5%B7%E6%8C%87%E6%95%B8%EF%BD%9C%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E5%88%9D%E6%9C%9F%20%20%E6%A5%AD%E7%95%8C%E6%B2%99%E7%9B%A4%E6%8E%A8%E6%BC%942%E6%A5%B5%E7%AB%AF%E6%83%85%E5%A2%83?mtc=20023</id>
+    <title>波羅的海指數｜對等關稅初期  業界沙盤推演2極端情境</title>
+    <updated>2025-04-05T03:23:20.999232+00:00</updated>
+    <content>波羅的海指數｜對等關稅初期  業界沙盤推演2極端情境</content>
+    <link href="https://specialist.hket.com/article/3931762/%E6%B3%A2%E7%BE%85%E7%9A%84%E6%B5%B7%E6%8C%87%E6%95%B8%EF%BD%9C%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E5%88%9D%E6%9C%9F%20%20%E6%A5%AD%E7%95%8C%E6%B2%99%E7%9B%A4%E6%8E%A8%E6%BC%942%E6%A5%B5%E7%AB%AF%E6%83%85%E5%A2%83?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://invest.hket.com/article/3931758/%E5%8C%97%E6%B0%B4%E6%93%8D%E4%BD%9C%EF%BD%9CHSI%E4%B8%8B%E5%91%A8%E6%92%91%E5%88%B0%E5%97%8E%EF%BC%9F%E5%8C%97%E6%B0%B4288%E5%84%84%E7%8B%82%E6%B9%A7%20%20%E9%80%BE70%E5%84%84%E6%8E%83%E7%A7%91%E6%8A%805%E9%9B%84?mtc=20023</id>
+    <title>北水操作｜HSI下周撑到嗎？北水288億狂湧  逾70億掃科技5雄</title>
+    <updated>2025-04-05T03:23:20.999173+00:00</updated>
+    <content>北水操作｜HSI下周撑到嗎？北水288億狂湧  逾70億掃科技5雄</content>
+    <link href="https://invest.hket.com/article/3931758/%E5%8C%97%E6%B0%B4%E6%93%8D%E4%BD%9C%EF%BD%9CHSI%E4%B8%8B%E5%91%A8%E6%92%91%E5%88%B0%E5%97%8E%EF%BC%9F%E5%8C%97%E6%B0%B4288%E5%84%84%E7%8B%82%E6%B9%A7%20%20%E9%80%BE70%E5%84%84%E6%8E%83%E7%A7%91%E6%8A%805%E9%9B%84?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://topick.hket.com/article/3932187/%E6%88%BF%E5%8D%94%EF%BD%9C%E5%88%86%E9%9A%8E%E6%AE%B5%E5%AF%A6%E6%96%BD%E5%AF%8C%E6%88%B6%E6%94%BF%E7%AD%96%E3%80%80%E6%88%BF%E5%8D%94%E4%B8%BB%E5%B8%AD%E5%87%8C%E5%98%89%E5%8B%A4%E6%8C%87%E9%9C%80%E6%99%82%E5%90%91%E7%A7%9F%E6%88%B6%E8%A7%A3%E8%AA%AA?mtc=20023</id>
+    <title>房協｜分階段實施富戶政策　房協主席凌嘉勤指需時向租戶解說</title>
+    <updated>2025-04-05T03:23:20.999105+00:00</updated>
+    <content>房協｜分階段實施富戶政策　房協主席凌嘉勤指需時向租戶解說</content>
+    <link href="https://topick.hket.com/article/3932187/%E6%88%BF%E5%8D%94%EF%BD%9C%E5%88%86%E9%9A%8E%E6%AE%B5%E5%AF%A6%E6%96%BD%E5%AF%8C%E6%88%B6%E6%94%BF%E7%AD%96%E3%80%80%E6%88%BF%E5%8D%94%E4%B8%BB%E5%B8%AD%E5%87%8C%E5%98%89%E5%8B%A4%E6%8C%87%E9%9C%80%E6%99%82%E5%90%91%E7%A7%9F%E6%88%B6%E8%A7%A3%E8%AA%AA?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://topick.hket.com/article/3886615/%E5%AE%B6%E9%95%B7%E6%B4%A5%E8%B2%BC%EF%BD%9C%E5%B9%BC%E5%85%92%E4%B8%AD%E5%BF%83%E5%AE%B6%E9%95%B7%E6%B4%A5%E8%B2%BC%E5%A2%9E%E8%87%B3-1000%E3%80%80%E7%94%B3%E8%AB%8B%E8%B3%87%E6%A0%BC-%E6%96%B9%E6%B3%95-%E7%99%BC%E6%94%BE%E6%96%B9%E5%BC%8F%E6%87%B6%E4%BA%BA%E5%8C%85?mtc=20023</id>
+    <title>家長津貼｜幼兒中心家長津貼增至$1000　申請資格/方法/發放方式懶人包</title>
+    <updated>2025-04-05T03:23:20.999025+00:00</updated>
+    <content>家長津貼｜幼兒中心家長津貼增至$1000　申請資格/方法/發放方式懶人包</content>
+    <link href="https://topick.hket.com/article/3886615/%E5%AE%B6%E9%95%B7%E6%B4%A5%E8%B2%BC%EF%BD%9C%E5%B9%BC%E5%85%92%E4%B8%AD%E5%BF%83%E5%AE%B6%E9%95%B7%E6%B4%A5%E8%B2%BC%E5%A2%9E%E8%87%B3-1000%E3%80%80%E7%94%B3%E8%AB%8B%E8%B3%87%E6%A0%BC-%E6%96%B9%E6%B3%95-%E7%99%BC%E6%94%BE%E6%96%B9%E5%BC%8F%E6%87%B6%E4%BA%BA%E5%8C%85?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://ps.hket.com/article/3828899/%E6%8B%8D%E8%B3%A3%E6%92%88%E7%AD%8D%E7%9B%A4%EF%BD%9C%E6%B2%B9%E9%BA%BB%E5%9C%B0%E7%AD%8D%E7%9B%A4%E3%80%8C%E5%85%A9%E7%90%83%E3%80%8D%E6%9C%89%E6%89%BE%EF%BC%9F%20%E9%8A%85%E9%91%BC%E7%81%A3550%E5%A4%9A%E5%91%8E%E6%88%B6%E3%80%8C3%E5%AD%97%E9%A0%AD%E3%80%8D%E6%9C%89%E4%BA%A4%E6%98%93%20%E4%BD%8E%E4%BC%B0%E5%83%B9%E8%B6%B3%E8%B6%B3%E4%B8%80%E5%8D%8A?mtc=20023</id>
+    <title>拍賣撈筍盤｜油麻地筍盤「兩球」有找？ 銅鑼灣550多呎戶「3字頭」有交易 低估價足足一半</title>
+    <updated>2025-04-05T03:23:20.998973+00:00</updated>
+    <content>拍賣撈筍盤｜油麻地筍盤「兩球」有找？ 銅鑼灣550多呎戶「3字頭」有交易 低估價足足一半</content>
+    <link href="https://ps.hket.com/article/3828899/%E6%8B%8D%E8%B3%A3%E6%92%88%E7%AD%8D%E7%9B%A4%EF%BD%9C%E6%B2%B9%E9%BA%BB%E5%9C%B0%E7%AD%8D%E7%9B%A4%E3%80%8C%E5%85%A9%E7%90%83%E3%80%8D%E6%9C%89%E6%89%BE%EF%BC%9F%20%E9%8A%85%E9%91%BC%E7%81%A3550%E5%A4%9A%E5%91%8E%E6%88%B6%E3%80%8C3%E5%AD%97%E9%A0%AD%E3%80%8D%E6%9C%89%E4%BA%A4%E6%98%93%20%E4%BD%8E%E4%BC%B0%E5%83%B9%E8%B6%B3%E8%B6%B3%E4%B8%80%E5%8D%8A?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://invest.hket.com/article/3931883/%E6%9C%89%E5%9C%96%E6%9C%89%E5%8B%A2%EF%BD%9C%E6%B8%AF%E8%82%A1%E4%B8%8B%E5%91%A8%E6%92%91%E5%88%B0%E5%97%8E%EF%BC%9F%E9%81%93%E6%8C%87%E5%8B%81%E6%8F%92%E9%80%BE2200%E9%BB%9E%20%20%E6%BB%99%E8%B1%90ADR%E4%BD%8E%E6%B8%AF%E8%82%A110-%20%20%E9%98%BF%E9%87%8C%E7%BE%8E%E8%82%A1%E8%BC%83%E4%BD%8E%E6%B8%AF%E8%82%A1%E9%80%BE8-?mtc=20023</id>
+    <title>有圖有勢｜港股下周撑到嗎？道指勁插逾2200點  滙豐ADR低港股10%  阿里美股較低港股逾8%</title>
+    <updated>2025-04-05T03:23:20.998919+00:00</updated>
+    <content>有圖有勢｜港股下周撑到嗎？道指勁插逾2200點  滙豐ADR低港股10%  阿里美股較低港股逾8%</content>
+    <link href="https://invest.hket.com/article/3931883/%E6%9C%89%E5%9C%96%E6%9C%89%E5%8B%A2%EF%BD%9C%E6%B8%AF%E8%82%A1%E4%B8%8B%E5%91%A8%E6%92%91%E5%88%B0%E5%97%8E%EF%BC%9F%E9%81%93%E6%8C%87%E5%8B%81%E6%8F%92%E9%80%BE2200%E9%BB%9E%20%20%E6%BB%99%E8%B1%90ADR%E4%BD%8E%E6%B8%AF%E8%82%A110-%20%20%E9%98%BF%E9%87%8C%E7%BE%8E%E8%82%A1%E8%BC%83%E4%BD%8E%E6%B8%AF%E8%82%A1%E9%80%BE8-?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://ps.hket.com/article/3931638/%E5%B1%85%E5%B1%8B%E8%A3%9D%E4%BF%AE%E8%A8%AD%E8%A8%88%EF%BD%9C%E8%97%8D%E7%94%B038%E5%B9%B4%E5%B1%85%E5%B1%8B-43%E8%90%AC%E7%BF%BB%E6%96%B0%E6%88%90%E6%97%A5%E5%BC%8F%E5%AE%B6%E5%B1%85%20%E5%88%A9%E7%94%A8%E4%B8%80%E8%A8%AD%E8%A8%88%E6%89%93%E7%A0%B4%E5%82%B3%E7%B5%B1%E4%BB%A3%E6%9B%BF%E6%B2%99%E7%99%BC%E8%8C%B6%E5%87%A0?mtc=20023</id>
+    <title>居屋裝修設計｜藍田38年居屋$43萬翻新成日式家居 利用一設計打破傳統代替沙發茶几</title>
+    <updated>2025-04-05T03:23:20.998862+00:00</updated>
+    <content>居屋裝修設計｜藍田38年居屋$43萬翻新成日式家居 利用一設計打破傳統代替沙發茶几</content>
+    <link href="https://ps.hket.com/article/3931638/%E5%B1%85%E5%B1%8B%E8%A3%9D%E4%BF%AE%E8%A8%AD%E8%A8%88%EF%BD%9C%E8%97%8D%E7%94%B038%E5%B9%B4%E5%B1%85%E5%B1%8B-43%E8%90%AC%E7%BF%BB%E6%96%B0%E6%88%90%E6%97%A5%E5%BC%8F%E5%AE%B6%E5%B1%85%20%E5%88%A9%E7%94%A8%E4%B8%80%E8%A8%AD%E8%A8%88%E6%89%93%E7%A0%B4%E5%82%B3%E7%B5%B1%E4%BB%A3%E6%9B%BF%E6%B2%99%E7%99%BC%E8%8C%B6%E5%87%A0?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://invest.hket.com/article/3930893/%E9%98%BF%E9%87%8C5%E6%9C%882%E8%A6%81%E6%8E%A5%E6%94%B6%E7%89%B9%E5%A4%A7%E5%88%A9%E6%B7%A1%E5%8C%85%E8%A3%B9%20%E9%98%BF%E9%87%8C%E9%BB%9E%E7%AE%97%EF%BC%9F?mtc=20023</id>
+    <title>阿里5月2要接收特大利淡包裹 阿里點算？</title>
+    <updated>2025-04-05T03:23:20.998796+00:00</updated>
+    <content>阿里5月2要接收特大利淡包裹 阿里點算？</content>
+    <link href="https://invest.hket.com/article/3930893/%E9%98%BF%E9%87%8C5%E6%9C%882%E8%A6%81%E6%8E%A5%E6%94%B6%E7%89%B9%E5%A4%A7%E5%88%A9%E6%B7%A1%E5%8C%85%E8%A3%B9%20%E9%98%BF%E9%87%8C%E9%BB%9E%E7%AE%97%EF%BC%9F?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://invest.hket.com/article/3931759/%E9%97%9C%E7%A8%85%E4%BA%82%E5%B8%82%204%E6%AC%BE%E5%A3%93%E9%A9%9A%E6%8A%95%E8%B3%87%E9%81%B8%E6%93%87?mtc=20023</id>
+    <title>關稅亂市 4款壓驚投資選擇</title>
+    <updated>2025-04-05T03:23:20.998742+00:00</updated>
+    <content>關稅亂市 4款壓驚投資選擇</content>
+    <link href="https://invest.hket.com/article/3931759/%E9%97%9C%E7%A8%85%E4%BA%82%E5%B8%82%204%E6%AC%BE%E5%A3%93%E9%A9%9A%E6%8A%95%E8%B3%87%E9%81%B8%E6%93%87?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://knowledge.hket.com/article/3931693/8%E5%80%8B%E5%95%8F%E9%A1%8C%C2%A0%E7%9C%8B%E6%87%82%E9%97%9C%E7%A8%85%E4%B8%80%E5%88%87%EF%BC%88%E6%87%B6%E4%BA%BA%E5%8C%85%E4%B8%8A%E7%AF%87%EF%BC%89?mtc=20023</id>
+    <title>8個問題 看懂關稅一切（懶人包上篇）</title>
+    <updated>2025-04-05T03:23:20.998683+00:00</updated>
+    <content>8個問題 看懂關稅一切（懶人包上篇）</content>
+    <link href="https://knowledge.hket.com/article/3931693/8%E5%80%8B%E5%95%8F%E9%A1%8C%C2%A0%E7%9C%8B%E6%87%82%E9%97%9C%E7%A8%85%E4%B8%80%E5%88%87%EF%BC%88%E6%87%B6%E4%BA%BA%E5%8C%85%E4%B8%8A%E7%AF%87%EF%BC%89?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://knowledge.hket.com/article/3930757/%E6%99%BA%E8%AD%9C%E8%83%8C%E6%99%AF%E5%BC%B7%E5%BE%97%E9%9B%A2%E8%AD%9C%20%E6%B8%85%E8%8F%AF%E7%8F%AD%E5%BA%95%E8%81%AF%E4%B9%98ATMX-%E5%8C%97%E4%BA%AC%E5%9C%8B%E8%B3%87-%E6%B2%99%E7%89%B9%E9%98%BF%E7%BE%8E?mtc=20023</id>
+    <title>智譜背景強得離譜 清華班底聯乘ATMX+北京國資+沙特阿美</title>
+    <updated>2025-04-05T03:23:20.998625+00:00</updated>
+    <content>智譜背景強得離譜 清華班底聯乘ATMX+北京國資+沙特阿美</content>
+    <link href="https://knowledge.hket.com/article/3930757/%E6%99%BA%E8%AD%9C%E8%83%8C%E6%99%AF%E5%BC%B7%E5%BE%97%E9%9B%A2%E8%AD%9C%20%E6%B8%85%E8%8F%AF%E7%8F%AD%E5%BA%95%E8%81%AF%E4%B9%98ATMX-%E5%8C%97%E4%BA%AC%E5%9C%8B%E8%B3%87-%E6%B2%99%E7%89%B9%E9%98%BF%E7%BE%8E?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://knowledge.hket.com/article/3930974/%E7%B6%93%E6%BF%9F%E8%A1%B0%E9%80%80%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%B8%A9%20%E6%8A%95%E8%B3%87%E8%80%85%E5%A6%82%E4%BD%95%E9%81%BF%E9%9C%87%EF%BC%9F?mtc=20023</id>
+    <title>經濟衰退風險升温 投資者如何避震？</title>
+    <updated>2025-04-05T03:23:20.998562+00:00</updated>
+    <content>經濟衰退風險升温 投資者如何避震？</content>
+    <link href="https://knowledge.hket.com/article/3930974/%E7%B6%93%E6%BF%9F%E8%A1%B0%E9%80%80%E9%A2%A8%E9%9A%AA%E5%8D%87%E6%B8%A9%20%E6%8A%95%E8%B3%87%E8%80%85%E5%A6%82%E4%BD%95%E9%81%BF%E9%9C%87%EF%BC%9F?mtc=20023"/>
+  </entry>
+  <entry>
+    <id>https://knowledge.hket.com/article/3931305/%E4%BD%95%E8%AC%82%E3%80%8C%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E3%80%8D%20%E7%A8%85%E7%8E%87%E6%80%8E%E8%A8%88%E7%AE%97%EF%BC%9F%20%E9%A6%99%E6%B8%AF%E5%B8%82%E5%A0%B4%E4%B9%9F%E5%8F%97%E7%89%BD%E9%80%A3?mtc=20023</id>
+    <title>何謂「對等關稅」 稅率怎計算？ 香港市場也受牽連</title>
+    <updated>2025-04-05T03:23:20.998459+00:00</updated>
+    <content>何謂「對等關稅」 稅率怎計算？ 香港市場也受牽連</content>
+    <link href="https://knowledge.hket.com/article/3931305/%E4%BD%95%E8%AC%82%E3%80%8C%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E3%80%8D%20%E7%A8%85%E7%8E%87%E6%80%8E%E8%A8%88%E7%AE%97%EF%BC%9F%20%E9%A6%99%E6%B8%AF%E5%B8%82%E5%A0%B4%E4%B9%9F%E5%8F%97%E7%89%BD%E9%80%A3?mtc=20023"/>
   </entry>
 </feed>
