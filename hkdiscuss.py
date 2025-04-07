@@ -5,6 +5,7 @@ from urllib.parse import urljoin
 from datetime import datetime, timezone, timedelta
 import os
 import hashlib
+from pathlib import Path
 
 def get_thread_description(thread_url):
     """Fetch additional details from thread page for description"""
