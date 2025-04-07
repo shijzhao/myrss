@@ -27,8 +27,18 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate RSS feeds
-        run: python rss.py
+        run: python hknet.py; python hkdiscuss.py
+        
+      - name: Check generated files
+        run: |
+          if [ ! -f *.xml ]; then
+            echo "No XML files generated."
+            exit 1
+          fi
 
+      - name: Clean up old deployment
+        run: rm -rf gh-pages-deploy
+        
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
@@ -47,8 +57,7 @@ jobs:
           fi
 
           # Move (not copy) the generated files to avoid duplication
-          mv hkdiscuss_feed.xml gh-pages-deploy/
-          mv hket_feed.xml gh-pages-deploy/
+          mv *.xml gh-pages-deploy/
 
           # Commit and push changes
           cd gh-pages-deploy
