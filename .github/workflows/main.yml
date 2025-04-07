@@ -10,7 +10,12 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-
+    steps:
+      - name: Set retention period
+        run: echo "Retention period set to 7 days"
+        env:
+          GITHUB_ACTIONS_RETENTION_DAYS: 7
+          
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
