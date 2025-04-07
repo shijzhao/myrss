@@ -13,6 +13,7 @@ jobs:
     env:
       ACTIONS_RETENTION_DAYS: 3  # Keeps logs for 3 days
       GITHUB_ACTIONS_RETENTION_DAYS: 3  # For artifacts (if any)
+      TZ: Asia/Hong_Kong  
 
     steps:
       - name: Checkout repository
