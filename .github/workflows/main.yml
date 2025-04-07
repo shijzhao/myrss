@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    env:  # ✅ Correct indentation (inside the job)
+    env:
       ACTIONS_RETENTION_DAYS: 3  # Keeps logs for 3 days
       GITHUB_ACTIONS_RETENTION_DAYS: 3  # For artifacts (if any)
 
@@ -19,6 +19,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Needed for branch operations
+
+      - name: Fetch gh-pages branch
+        run: |  
+          git fetch origin gh-pages:gh-pages --force
+          mkdir -p gh-pages-deploy
+          git --work-tree=gh-pages-deploy checkout gh-pages -- .
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -30,8 +36,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Generate RSS feeds
-        run: python hknet.py; python hkdiscuss.py
-        
+        run: |
+          python hknet.py
+          python hkdiscuss.py
+
       - name: Check generated files
         run: |
           if [ ! -f *.xml ]; then
@@ -41,13 +49,13 @@ jobs:
 
       - name: Clean up old deployment
         run: rm -rf gh-pages-deploy
-        
+
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-          # Create or reset gh-pages branch in a separate directory
+          # Create or reset gh-pages branch
           mkdir -p gh-pages-deploy
           if git show-ref --quiet refs/remotes/origin/gh-pages; then
             git worktree add gh-pages-deploy gh-pages
@@ -59,7 +67,7 @@ jobs:
             cd ..
           fi
 
-          # Move (not copy) the generated files to avoid duplication
+          # Move generated files
           mv *.xml gh-pages-deploy/
 
           # Commit and push changes
