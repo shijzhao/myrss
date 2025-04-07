@@ -31,21 +31,28 @@ def get_thread_description(thread_url):
     return None
 
 def get_existing_entries(atom_file):
-    """Get existing entries using only titles as markers"""
+    """Get existing entries from either gh-pages branch or local file"""
     existing_titles = set()
-    if os.path.exists(atom_file):
-        try:
-            with open(atom_file, 'r', encoding='utf-8') as f:
-                soup = BeautifulSoup(f.read(), 'xml')
-                for entry in soup.find_all('entry'):
-                    if entry.title and entry.title.text:
-                        # Normalize the title by stripping whitespace and lowercasing
-                        normalized_title = entry.title.text.strip().lower()
-                        existing_titles.add(normalized_title)
-        except Exception as e:
-            print(f"Error reading existing feed: {e}")
+    
+    # Check both possible locations (gh-pages branch and local file)
+    possible_paths = [
+        Path("gh-pages-deploy") / atom_file,  # From fetched gh-pages branch
+        Path(atom_file)                       # Local file (if exists)
+    ]
+    
+    for file_path in possible_paths:
+        if file_path.exists():
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    soup = BeautifulSoup(f.read(), 'xml')
+                    for entry in soup.find_all('entry'):
+                        if entry.title and entry.title.text:
+                            normalized_title = entry.title.text.strip().lower()
+                            existing_titles.add(normalized_title)
+            except Exception as e:
+                print(f"Error reading {file_path}: {e}")
+    
     return existing_titles
-
 
 def parse_time(time_element):
     """Parse time element with timezone"""
