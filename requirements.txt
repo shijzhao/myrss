@@ -1,6 +1,3 @@
 requests
 bs4
 feedgen
-urllib
-datetime
-hashlib
