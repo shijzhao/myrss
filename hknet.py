@@ -8,7 +8,7 @@ import hashlib
 from pathlib import Path
 
 def get_thread_description(thread_url):
-    """Fetch additional details from thread page for description"""
+    """Fetch and preserve original formatted content from thread page"""
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
@@ -18,26 +18,34 @@ def get_thread_description(thread_url):
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             container = soup.find('div', class_='article-detail-content-container')
-            if container:
-                posts = container.find_all('p')
-            else:
-                posts = soup.select('div.article-detail-content-container > p')
+            
+            if not container:
+                return None
+                
+            # Process images to ensure they have proper attributes
+            for img in container.find_all('img'):
+                img_src = img.get('data-src', img.get('src', ''))
+                if img_src:
+                    img['src'] = img_src
+                    img['style'] = 'max-width:100%; height:auto;'
+                    if not img.get('alt'):
+                        img['alt'] = ''
+                
+            # Remove unwanted elements if needed
+            for element in container.find_all(['script', 'style', 'iframe', 'noscript']):
+                element.decompose()
+                
+            # Clean up empty paragraphs
+            for p in container.find_all('p'):
+                if not p.get_text(strip=True):
+                    p.decompose()
+                    
+            # Limit content length if needed (optional)
+            content_str = str(container)
 
-            if posts:
-                description_parts = []
-                for post in posts:
-                    text = post.get_text(' ', strip=True)
-                    if text:  # Only add if there's actual text
-                        description_parts.append(text[:5000])  # Limit length
-
-                # Handle images
-                images = container.select('img')
-                for img in images:
-                    img_src = img.get('data-src', img.get('src', ''))
-                    if img_src:
-                        description_parts.append(f'<img src="{img_src}" alt="" style="max-width:100%; height:auto;"/>')
-
-                return '<br>'.join(description_parts) + "..." if description_parts else None
+                
+            return content_str
+            
     except Exception as e:
         print(f"Couldn't fetch description from {thread_url}: {e}")
     return None
@@ -160,7 +168,7 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
 fetch_feed(
     url='https://inews.hket.com/sran001/%E5%85%A8%E9%83%A8?mtc=20080',
     base_url='https://inews.hket.com/',
-    atom_file='hknet.xml',
+    atom_file=r'C:\Users\shijzhao\Dropbox\hknet.xml',
     title='HKET News Feed',
     subtitle='Latest news',
     item_selector='div.listing-content-container',
