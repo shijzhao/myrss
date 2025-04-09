@@ -168,7 +168,7 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
 fetch_feed(
     url='https://inews.hket.com/sran001/%E5%85%A8%E9%83%A8?mtc=20080',
     base_url='https://inews.hket.com/',
-    atom_file=r'C:\Users\shijzhao\Dropbox\hknet.xml',
+    atom_file='hknet.xml',
     title='HKET News Feed',
     subtitle='Latest news',
     item_selector='div.listing-content-container',
