@@ -15,20 +15,13 @@ def get_thread_description(thread_url):
             soup = BeautifulSoup(response.text, 'html.parser')
             # Extract first post content
             if post := soup.find('div', class_='t_msgfont'):
-                # Get the text and images
                 description_parts = []
-
-                # Add text content
                 description_parts.append(str(post))  # Converting the entire post to HTML
-
-                # Add images
-                for img in post.find_all('img'):
-                    img_src = img['src']  # Get the image source
-                    description_parts.append(f'<img src="{img_src}" alt="" style="max-width:100%; height:auto;"/>')
-
-                return '<br>'.join(description_parts) + "..."  # Join parts with line breaks
+                return '<br>'.join(description_parts)
+                
     except Exception as e:
         print(f"Couldn't fetch description from {thread_url}: {e}")
+        
     return None
 
 def get_existing_entries(atom_file):
