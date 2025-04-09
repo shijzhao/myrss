@@ -13,21 +13,33 @@ def get_thread_description(thread_url):
         response = requests.get(thread_url, timeout=10)
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
-            # Extract first post content
+
+            # Extract publication date
+            publish_date_meta = soup.find('meta', attrs={'name': 'publish_date'})
+            publish_date = publish_date_meta['content'] if publish_date_meta else None
+
             if post := soup.find('div', class_='t_msgfont'):
                 description_parts = []
                 description_parts.append(str(post))  # Converting the entire post to HTML
-                return '<br>'.join(description_parts)
-                
+
+                # Add images
+                #for img in post.find_all('img'):
+                #    img_src = img['src']  # Get the image source
+                #    description_parts.append(f'<img src="{img_src}" alt="" style="max-width:100%; height:auto;"/>')
+
+                if publish_date:
+                    description_parts.insert(0, f"<p>Published on: {publish_date}</p>")  # Insert at the beginning
+
+            return '<br>'.join(description_parts), publish_date
+
     except Exception as e:
         print(f"Couldn't fetch description from {thread_url}: {e}")
-        
-    return None
+    return None, None
+
 
 def get_existing_entries(atom_file):
-    """Get existing entries from either gh-pages branch or local file"""
     existing_titles = set()
-    
+
     # Check both possible locations (gh-pages branch and local file)
     possible_paths = [
         Path("gh-pages-deploy") / atom_file,  # From fetched gh-pages branch
@@ -43,10 +55,12 @@ def get_existing_entries(atom_file):
                         if entry.title and entry.title.text:
                             normalized_title = entry.title.text.strip().lower()
                             existing_titles.add(normalized_title)
+
             except Exception as e:
                 print(f"Error reading {file_path}: {e}")
     
     return existing_titles
+
 
 def parse_time(time_element):
     """Parse time element with timezone"""
@@ -77,6 +91,10 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
+    # Define the time window for new articles (last 3 hours)
+    time_threshold = datetime.now(timezone.utc) - timedelta(hours=3)
+
+
     for thread in soup.select(item_selector):
 
         title_tag = thread.select_one(link_selector)
@@ -89,16 +107,20 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
             continue
         
         thread_url = urljoin(url, title_tag['href'])
-        pub_date = parse_time(thread.select_one('td.lastpost em span'))
+        description, pub_date_str = get_thread_description(thread_url)
+        if pub_date_str:
+            pub_date = datetime.fromisoformat(pub_date_str.replace('Z', '+00:00'))  # Handle UTC
+        else:
+            continue  # Skip if no publication date
 
-        normalized_title = entry_title.strip().lower()
 
-        if normalized_title in existing_titles:
+        # Only add the entry if it's published in the last 3 hours
+        if pub_date < time_threshold:
             continue
 
-        description = ''
-        if thread_desc := get_thread_description(thread_url):
-            description += f"\n\n{thread_desc}"
+        normalized_title = entry_title.strip().lower()
+        if normalized_title in existing_titles:
+            continue
 
         # Create feed entry
         entry = fg.add_entry()
