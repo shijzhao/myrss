@@ -109,10 +109,9 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
         thread_url = urljoin(url, title_tag['href'])
         description, pub_date_str = get_thread_description(thread_url)
         if pub_date_str:
-            pub_date = datetime.fromisoformat(pub_date_str.replace('Z', '+00:00'))  # Handle UTC
+            pub_date = datetime.strptime(pub_date_str, '%Y-%m-%dT%H:%M:%S%z')
         else:
             continue  # Skip if no publication date
-
 
         # Only add the entry if it's published in the last 3 hours
         if pub_date < time_threshold:
