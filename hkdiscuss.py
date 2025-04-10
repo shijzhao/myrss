@@ -114,7 +114,12 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
         thread_url = urljoin(url, title_tag['href'])
         description, pub_date_str = get_thread_description(thread_url)
         if pub_date_str:
-            pub_date = datetime.fromisoformat(pub_date_str.replace('Z', '+00:00'))  # Handle UTC
+            if pub_date_str.endswith('Z'):
+                pub_date_str = pub_date_str[:-1] + '+00:00'  # Convert UTC to +00:00
+            elif '+' in pub_date_str or '-' in pub_date_str:
+                pub_date_str = pub_date_str[:-2] + ':' + pub_date_str[-2:]  # Convert +0800 to +08:00
+        pub_date = datetime.fromisoformat(pub_date_str)
+        
         else:
             continue  # Skip if no publication date
 
