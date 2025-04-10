@@ -6,6 +6,7 @@ from datetime import datetime, timezone, timedelta
 import os
 import hashlib
 from pathlib import Path
+import argparse
 
 def get_thread_description(thread_url):
     """Fetch additional details from thread page for description"""
@@ -105,21 +106,21 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
         if not entry_title:
             print("Skipping entry with empty title.")
             continue
-        
+
+        normalized_title = entry_title.strip().lower()
+        if normalized_title in existing_titles:
+            continue   
+
         thread_url = urljoin(url, title_tag['href'])
         description, pub_date_str = get_thread_description(thread_url)
         if pub_date_str:
-            pub_date = datetime.strptime(pub_date_str, '%Y-%m-%dT%H:%M:%S%z')
+            pub_date = datetime.fromisoformat(pub_date_str.replace('Z', '+00:00'))  # Handle UTC
         else:
             continue  # Skip if no publication date
 
         # Only add the entry if it's published in the last 3 hours
-        if pub_date < time_threshold:
-            continue
-
-        normalized_title = entry_title.strip().lower()
-        if normalized_title in existing_titles:
-            continue
+        #if pub_date < time_threshold:
+        #    continue
 
         # Create feed entry
         entry = fg.add_entry()
@@ -149,32 +150,50 @@ def fetch_feed(url, base_url, atom_file, title, subtitle, item_selector, link_se
         print(f"No new entries found. Feed not updated: {atom_file}")
 
 
-fetch_feed(
-    url='https://www.discuss.com.hk/forumdisplay.php?fid=57&orderby=dateline&ascdesc=DESC&filter=0',
-    base_url='https://www.discuss.com.hk/',
-    atom_file='hkdiscuss_money.xml',
-    title='HKDiscuss money',
-    subtitle='Latest articles',
-    item_selector='tbody.forumdisplay_thread',
-    link_selector='span.tsubject a'
-)
+def main():
+    parser = argparse.ArgumentParser(description='Generate RSS feeds from HKDiscuss forums')
+    parser.add_argument('--feeds', nargs='+', choices=['money', 'house', 'hottopics', 'all'], 
+                       default=['all'], help='Which feeds to generate (default: all)')
+    args = parser.parse_args()
 
-fetch_feed(
-    url='https://www.discuss.com.hk/forumdisplay.php?fid=110&orderby=dateline&ascdesc=DESC&filter=0',
-    base_url='https://www.discuss.com.hk/',
-    atom_file='hkdiscuss_house.xml',
-    title='HKDiscuss house',
-    subtitle='Latest articles',
-    item_selector='tbody.forumdisplay_thread',
-    link_selector='span.tsubject a'
-)
+    if 'all' in args.feeds:
+        args.feeds = ['money', 'house', 'hottopics']
 
-fetch_feed(
-    url='https://www.discuss.com.hk/hottopics.php', 
-    base_url='https://www.discuss.com.hk/',
-    atom_file='hkdiscuss_hottopics.xml',
-    title='HKDiscuss Hot Topics',
-    subtitle='Latest hot topics',
-    item_selector='div.section.hslice ul li:not([style*="text-align:right"])',
-    link_selector='a'
-)
+    if 'money' in args.feeds:
+        print("\nGenerating money feed...")
+        fetch_feed(
+            url='https://www.discuss.com.hk/forumdisplay.php?fid=57&orderby=dateline&ascdesc=DESC&filter=0',
+            base_url='https://www.discuss.com.hk/',
+            atom_file='hkdiscuss_money.xml',
+            title='HKDiscuss money',
+            subtitle='Latest articles',
+            item_selector='tbody.forumdisplay_thread',
+            link_selector='span.tsubject a'
+        )
+
+    if 'house' in args.feeds:
+        print("\nGenerating house feed...")
+        fetch_feed(
+            url='https://www.discuss.com.hk/forumdisplay.php?fid=110&orderby=dateline&ascdesc=DESC&filter=0',
+            base_url='https://www.discuss.com.hk/',
+            atom_file='hkdiscuss_house.xml',
+            title='HKDiscuss house',
+            subtitle='Latest articles',
+            item_selector='tbody.forumdisplay_thread',
+            link_selector='span.tsubject a'
+        )
+
+    if 'hottopics' in args.feeds:
+        print("\nGenerating hot topics feed...")
+        fetch_feed(
+            url='https://www.discuss.com.hk/hottopics.php', 
+            base_url='https://www.discuss.com.hk/',
+            atom_file='hkdiscuss_hottopics.xml',
+            title='HKDiscuss Hot Topics',
+            subtitle='Latest hot topics',
+            item_selector='div.section.hslice ul li:not([style*="text-align:right"])',
+            link_selector='a'
+        )
+
+if __name__ == '__main__':
+    main()
