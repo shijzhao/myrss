@@ -2,7 +2,8 @@ name: Generate and Deploy RSS Feed
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */2 * * *'    # Every 2 hours
+    - cron: '0 */12 * * *'   # Every 12 hours
   workflow_dispatch:
 
 jobs:
@@ -11,17 +12,15 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     env:
-      ACTIONS_RETENTION_DAYS: 3  # Keeps logs for 3 days
-      GITHUB_ACTIONS_RETENTION_DAYS: 3  # For artifacts (if any)
-      TZ: Asia/Hong_Kong  
+      TZ: Asia/Hong_Kong
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Needed for branch operations
+          fetch-depth: 0
 
-      - name: Fetch gh-pages branch
+      - name: Setup gh-pages worktree
         run: |
           git fetch origin gh-pages:gh-pages --force
           mkdir -p gh-pages-deploy
@@ -33,60 +32,59 @@ jobs:
         with:
           path: |
             ~/.cache/pip
-            venv/
-          key: pip-${{ hashFiles('requirements.txt') }}-${{ runner.os }}
+            ~/.local/lib/python3.10/site-packages
+          key: pip-${{ hashFiles('**/requirements.txt') }}-${{ runner.os }}-py310
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          fi
+          pip install requests beautifulsoup4 feedgen lxml
         env:
           PIP_CACHE_DIR: ~/.cache/pip
 
       - name: Generate RSS feeds
         run: |
-          python hknet.py
-          python hkdiscuss.py
-
-      - name: Check generated files
-        run: |
-          if [ ! -f *.xml ]; then
-            echo "No XML files generated."
-            exit 1
+          # Default to all feeds if manually triggered
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            python hkdiscuss.py --feeds money house hottopics
+            python hknet.py
+          elif [[ "${{ github.event.schedule }}" == "0 */2 * * *" ]]; then
+            python hkdiscuss.py --feeds money house
+            python hknet.py
+          else
+            python hkdiscuss.py --feeds hottopics
           fi
 
-      - name: Clean up old deployment
-        run: rm -rf gh-pages-deploy
+      - name: Verify generated files
+        run: |
+          if ! ls *.xml 1> /dev/null 2>&1; then
+            echo "Error: No XML files generated"
+            exit 1
+          fi
 
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          
+          # Clear old files except .git folder
+          find gh-pages-deploy -mindepth 1 -not -name '.git' -exec rm -rf {} +
 
-          mkdir -p gh-pages-deploy
-          if git show-ref --quiet refs/remotes/origin/gh-pages; then
-            git worktree add gh-pages-deploy gh-pages
-          else
-            git worktree add --orphan gh-pages-deploy
-            cd gh-pages-deploy
-            git commit --allow-empty -m "Initialize gh-pages"
-            git push origin gh-pages
-            cd ..
-          fi
-
+          # Move new files
           mv *.xml gh-pages-deploy/
+
+          # Commit and push
           cd gh-pages-deploy
           git add .
-          if git diff-index --quiet HEAD; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update feeds $(date +'%Y-%m-%d %H:%M:%S')"
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update feeds: $(
+              [[ "${{ github.event_name }}" == "workflow_dispatch" ]] && echo "all" ||
+              [[ "${{ github.event.schedule }}" == "0 */2 * * *" ]] && echo "money+house+hknet" || echo "hottopics"
+            ) $(date +'%Y-%m-%d %H:%M:%S')"
             git push origin gh-pages
           fi
